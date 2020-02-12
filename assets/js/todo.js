@@ -27,10 +27,13 @@ function renderTodo() {
             let id = input.id
             let idArray = id.split('-');
             let todoId = idArray[1];
+            let title = li.querySelector('label').innerText;
 
-            data = data.filter(task => task.id !== parseInt(todoId));
-
-            renderTodo();
+            //toastr.confirm('Are you sure?', {onOk: () => { console.log('ok') }, onCancel: () => { console.log('cancel')}})
+            if (toastr.success(`Tarefa ${title} removida com sucesso.`)){
+                data = data.filter(task => task.id !== parseInt(todoId));
+                renderTodo();
+            }           
         });
         document.querySelector('.todo').append(li);
     });
