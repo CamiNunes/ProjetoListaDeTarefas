@@ -21,7 +21,7 @@ function renderTodo() {
         });
 
         li.querySelector('button').addEventListener('click', e => {
-            console.warn('Você vai deletar este item.');
+            console.log(e.target.parentNode.querySelector('input').id.split('-')[1]);
         });
     
         document.querySelector('.todo').append(li);
