@@ -45,13 +45,6 @@ body{
     outline: none;
 }
 
-.content-center button {
-    border-radius: 25px;
-    background-color: rgb(32, 47, 61);
-    color: #FFFFFF;
-    margin-top: 15px;
-}
-
 .content-center button:hover {
     background-color: rgb(67, 107, 148);
     color: #000000;
@@ -117,6 +110,15 @@ footer{
 #new-task{
     width: 100%;
     padding: 10px;
+}
+
+.todo button{
+    width: initial;
+    color: #FFFFFF;
+    background-color: rgb(107, 17, 17);
+    float: right;
+    min-width: 30px;
+    
 }
 
 
