@@ -29,3 +29,9 @@ data.forEach(task =>{
 
     document.querySelector('.todo').append(li);
 });
+
+document.querySelector('#new-task').addEventListener('keyup', e => {
+    if(e.key === 'Enter'){
+        console.log(e.target.value);
+    }
+});
